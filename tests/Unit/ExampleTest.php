@@ -13,17 +13,4 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
-    
-    public function test_final_string_is_equals():void
-    {
-        $text = 'Olha o gol';
-        $this->assertStringEndsWith('gol', $text);
-    }
-
-    public function test_if_values_are_not_the_same():void
-    {
-        $text = 'Olha o gol';
-        $anothertext = 'Messi';
-        $this->assertNotSame($text, $anothertext);
-    }
 }
